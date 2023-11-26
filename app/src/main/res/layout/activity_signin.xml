@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="@drawable/bg"
+android:gravity="center"
+tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_app"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold" />
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameid"
+                android:textColor="@color/black"
+                android:hint="Enter Email"
+                android:textSize="25sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editPasswordToggle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passw"
+                android:textColor="@color/black"
+                android:hint="Enter Password"
+                android:textSize="25sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

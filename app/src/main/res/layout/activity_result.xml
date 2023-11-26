@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ResultActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/result"
+        android:text="Result"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trophy"
+        android:contentDescription="image"
+        android:src= "@drawable/tro"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/congratulations"
+        android:layout_marginTop="16dp"
+        android:text="Congratulations!!"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_name"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/black"
+        tools:text = "Username"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_score"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+      tools:text= " Your score is 4 out of 10. "/>
+
+    <Button
+        android:id="@+id/retake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:text="Another quiz"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finish_button"
+        android:layout_marginTop="30dp"
+        android:text="FINISH"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

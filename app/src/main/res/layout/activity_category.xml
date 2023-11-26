@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    tools:context=".CategoryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Country"
+            android:id="@+id/cntry"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Sports"
+            android:id="@+id/sports"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Monuments"
+            android:id="@+id/monu"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Literature"
+            android:id="@+id/lit"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Vocabulary"
+            android:id="@+id/vocab"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Wildlife"
+            android:id="@+id/wildlife"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

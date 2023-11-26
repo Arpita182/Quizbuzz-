@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/quizz"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Signin"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cnResult"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MonuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.QuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
