@@ -36,7 +36,7 @@ class cnResult : AppCompatActivity() {
 
         finish.setOnClickListener {
             Intent(this, MainActivity::class.java).also{
-                finish()
+                startActivity(it)
             }
         }
 
