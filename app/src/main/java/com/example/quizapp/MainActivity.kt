@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 class MainActivity : AppCompatActivity() {
     var t1: EditText? = null
     var t2: EditText? = null
-    var tv: TextView? = null
+    var b2: Button? = null
     var b1: Button? = null
 
     var firebaseAuth: FirebaseAuth? = null
@@ -23,10 +23,14 @@ class MainActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         t1 = findViewById<View>(R.id.nameid) as EditText
         t2 = findViewById<View>(R.id.passw) as EditText
-        tv = findViewById<View>(R.id.msg) as TextView
+        b2 = findViewById<View>(R.id.msg) as Button
         b1 = findViewById<View>(R.id.signup) as Button
 
         b1!!.setOnClickListener { rnu() }
+
+        b2!!.setOnClickListener {
+            signIn()
+        }
     }
 
     fun rnu() {
@@ -55,5 +59,9 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
-
+    private fun signIn() {
+        val intent = Intent(this, Signin::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
