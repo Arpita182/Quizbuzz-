@@ -26,40 +26,36 @@ class CategoryActivity : AppCompatActivity() {
         lit = findViewById<View>(R.id.lit) as Button
 
         cntry!!.setOnClickListener {
-            this@CategoryActivity.startActivity(
+            startActivity(
                 Intent(
-                    this@CategoryActivity.getApplicationContext(),
+                    this,
                     cntryActivity::class.java
                 )
             )
-            this@CategoryActivity.finish()
         }
         sports!!.setOnClickListener {
-            this@CategoryActivity.startActivity(
+            startActivity(
                 Intent(
-                    this@CategoryActivity.getApplicationContext(),
+                    this,
                     SportsActivity::class.java
                 )
             )
-            this@CategoryActivity.finish()
         }
         monu!!.setOnClickListener {
-            this@CategoryActivity.startActivity(
+            startActivity(
                 Intent(
-                    this@CategoryActivity.getApplicationContext(),
+                    this,
                     MonuActivity::class.java
                 )
             )
-            this@CategoryActivity.finish()
         }
         lit!!.setOnClickListener {
-            this@CategoryActivity.startActivity(
+            startActivity(
                 Intent(
-                    this@CategoryActivity.getApplicationContext(),
+                    this,
                     LitActivity::class.java
                 )
             )
-            this@CategoryActivity.finish()
         }
     }
 }

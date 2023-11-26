@@ -31,12 +31,12 @@ class LitActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var checkButton: Button
 
     private var questionsCounter = 0
-    private lateinit var questionsList: MutableList<Question>
+    private var questionsList: MutableList<Question> = mutableListOf()
     private var selectedAnswer = 0
-    private lateinit var currentQuestion: Question
+    private var currentQuestion: Question? = null
     private var answered = false
-    private lateinit var name: String
-    private var score= 0
+    private var name = ""
+    private var score = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -90,7 +90,7 @@ class LitActivity : AppCompatActivity(), View.OnClickListener {
         } else {
             checkButton.text = "FINISH"
 
-            Intent(this, ResultActivity::class.java).also{
+            Intent(this, cnResult::class.java).also{
                 it.putExtra(litCons.USER_NAME, name)
                 it.putExtra(litCons.SCORE, score)
                 it.putExtra(litCons.TOTAL_QUESTIONS, questionsList.size)
@@ -159,7 +159,7 @@ class LitActivity : AppCompatActivity(), View.OnClickListener {
     private fun checkAnswer() {
         answered = true
 
-        if(selectedAnswer == currentQuestion.correctAnswer) {
+        if(selectedAnswer == currentQuestion!!.correctAnswer) {
             highlightAnswer(selectedAnswer)
             score++
             answered = true
@@ -202,7 +202,7 @@ class LitActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun showSolution() {
-        selectedAnswer = currentQuestion.correctAnswer
+        selectedAnswer = currentQuestion!!.correctAnswer
         highlightAnswer(selectedAnswer)
     }
     private fun highlightAnswer(answer:Int){
