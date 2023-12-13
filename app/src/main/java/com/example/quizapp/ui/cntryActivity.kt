@@ -30,11 +30,11 @@ class cntryActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var checkButton: Button
 
     private var questionsCounter = 0
-    private lateinit var questionsList: MutableList<Question>
+    private var questionsList: MutableList<Question> = mutableListOf()
     private var selectedAnswer = 0
-    private lateinit var currentQuestion: Question
+    private var currentQuestion: Question? = null
     private var answered = false
-    private lateinit var name: String
+    private var name = ""
     private var score= 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -158,7 +158,7 @@ class cntryActivity : AppCompatActivity(), View.OnClickListener {
     private fun checkAnswer() {
         answered = true
 
-        if(selectedAnswer == currentQuestion.correctAnswer) {
+        if(selectedAnswer == currentQuestion!!.correctAnswer) {
             highlightAnswer(selectedAnswer)
             score++
             answered = true
@@ -201,7 +201,7 @@ class cntryActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun showSolution() {
-        selectedAnswer = currentQuestion.correctAnswer
+        selectedAnswer = currentQuestion!!.correctAnswer
         highlightAnswer(selectedAnswer)
     }
     private fun highlightAnswer(answer:Int){
